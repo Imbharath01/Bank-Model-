@@ -1,0 +1,87 @@
+.signup{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: rgb(202, 201, 201);
+    box-shadow:  5px 10px #e6e6e6;
+
+}
+.container header{
+    position: relative;
+    font-size: 25px;
+}
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    background-color: #000000;
+
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 20px;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% /3 - 20px);
+    flex-direction: column;
+}
+.input-field label{
+    font-size: 18px;
+    color: #2e2e2e;
+}
+.input-field input{
+    outline: none;
+    color: #333;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input:is(:focus, :user-valid){
+    box-shadow: 0 3px 6px #000000
+
+}
+.pass input{
+    display: flex;
+}
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 250px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    transition: 0.3s ease-in-out;  
+}
+
+.normal{
+    display: flex;
+    flex-direction: row;
+
+}
+

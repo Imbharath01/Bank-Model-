@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharat Bank</title>
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/model1.css">
+  </head>
+  <body>
+    <nav>
+      <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+          <span>BHARAT BANK</span>
+        </div>
+        <div class="description" style="text-align: center;">
+          <p>
+            No.1 Bank <br><br>
+            Bank chosen by a large number of users and is currently the top firm in banking industry.
+          </p>
+        </div>
+        <hr><br>
+        <div class="nav-right"></div>
+      </nav>
+    </nav>
+
+    <section>
+      <div class="content" >
+        <div class="content-left" id="lowertopic">
+        <h1> Bharat Bank</h1>
+        <p>Create a account with us and get your hand on best offers in your life and make you life comfortable with us! <br><br> Please Log in if you have already joined our Bharat bank Family!!</p>
+        <br>
+        </div>
+        <div class="content-right">
+        </div>
+
+        
+
+
+      </div> 
+      <div>
+
+        <!--! First home page containing log in and discription -->
+
+        <div class="container" id="head" style="display:visible">
+           <div class="login">
+           <label for="username">Username</label>
+           <input class="inputBox" type="text" placeholder="username" required><br>
+           <label for="pass">Password</label>
+           <input class="inputBox" type="password" placeholder="password" required><br><br>
+           <button class="btn" id="log" type="submit">Login</button>
+           </div>
+          </div>
+
+          <div class="container" id="btntopic" style="display: visible;">
+            <div class="signtopic">
+         <div class="signuptopic">
+          <p><br> If you dont have an account you can create one by signing up and join our Bharat Bank Fam as soon as possible to avail exciting offers!!!</p>
+          <button class="btn" type="submit" id="signup">Sign UP</button>
+        </div>
+          </div>
+            </div>
+      
+
+     
+            
+  
+
+      <!-- Sign up page-->
+      <div class="container" id="Signup" style="display: none;">
+            <div class="signup">
+              <header>Signup</header>
+  <form>
+      <div><br>
+        <header>User Details</header><br>
+        <div class="fields">
+            <div class="input-field">
+              <label for="fname">First Name: &nbsp;&nbsp;</label>
+              <input type="text" class="sbox" id="fname" >
+            </div>
+            <div class="input-field">
+              <label for="lname">Last Name: &nbsp;&nbsp;</label>
+              <input type="text" class="sbox" id="lname" >
+            </div>
+            <div class="input-field">
+              <label for="dob"> Date of Birth: &nbsp;&nbsp; </label>
+              <input type="date" class="sbox" placeholder="dd/mm/yyyy" id="dob" >
+            </div>
+            <div class="input-field">
+              <label for="Gender">Gender: </label>
+              <input type="text" class="sbox" placeholder="gender" id="gender" >
+            </div><br>
+            <div class="input-field"><br><br>
+              <label for="mobile_no">Phone Number: </label>
+              <input type="number" class="sbox" id="phone" ><br><br>
+            </div>
+        </div>
+      </div>
+
+      <hr>
+      <br>
+
+        <header>Password</header><br>
+
+
+        <div class="pass">
+        <div class="input-field">
+          <label for="password">Password : </label>
+          <input type="password" class="sbox" id="pas" >
+          <div class="normal">
+            <input type="checkbox"  id="sp2" >&nbsp;&nbsp;<p>show password</p>
+          </div>
+        </div>
+
+
+        <div class="input-field">
+          <label for="cpass">Confirm Password : </label>
+          <input type="password" class="sbox simple1" id="cpas" >
+          <div class="normal">
+            <input type="checkbox"  id="sp2" >&nbsp;&nbsp;<p>show password</p>
+          </div>
+        </div><br>
+      </div>
+
+
+      <div >
+         <button type="submit" class="btn" id="submitbtn" > Submit</button>
+         <div class="popup" id="popup" style="display: none;"><br><br>
+          <h2>Welcome to Bharat Bank</h2><br>
+          <p>Account Created Successfully.Thank you for choosing our Bank!</p>
+          <button class="btn" id="home">Home</button>
+         </div>
+      </div>
+
+
+  </form>
+            </div> 
+      </div>
+      
+
+      <!--After login page-->
+      <div class="container" id="loginpage" style="display: none;">
+        <div class="logpage">
+          <h3>User login Successful !</h3>
+          <h5>Choose the process you want to continue</h5>
+          <button class="btn" id="balance">Balance</button><br><br>
+          <button class="btn" id="deposit">Deposit</button><br><br>
+          <button class="btn" id="withdraw">Withdraw</button>
+        </div>
+      </div>
+       
+
+      <!--Balance page-->
+      <div class="container" style="display: none;">
+        <div class="balance ">
+        <h5><b>User Details :)</b><br><br>Name :<br>Gender :<br>Mobile Number :<br> Total Balance : 1000/-</h4>
+        </div>
+      </div>
+
+    </section>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
